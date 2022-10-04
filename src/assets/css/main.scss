@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    img{
+        width: 80%;
+    }
+    .slogan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 1073px){
+    .hero-container{
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+    }
+}
