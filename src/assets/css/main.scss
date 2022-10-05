@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 .hero-container{
+    padding-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 2rem;
     img{
-        width: 80%;
+        width: 90%;
     }
     .slogan{
         display: flex;
@@ -14,7 +17,7 @@
         h1{
             font-size: 4rem;
             text-transform: uppercase;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
         }
         span{
             font-family: 'Inter', sans-serif;
