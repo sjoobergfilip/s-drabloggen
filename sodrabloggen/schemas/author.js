@@ -9,6 +9,16 @@ export default {
       type: 'string',
     },
     {
+      name: 'twitterName',
+      title: 'Twitter Name',
+      type: 'string',
+    },
+    {
+      name: 'twitterLink',
+      title: 'Twitter Link',
+      type: 'string',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
