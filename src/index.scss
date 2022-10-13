@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 body {
 	background-color: #0C2309;
@@ -11,6 +12,11 @@ body {
 h1, h2, h3, h4{
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600
+}
+
+p{
+	font-family: 'PT Serif', serif;
+	font-size: 15px;
 }
 
 a {

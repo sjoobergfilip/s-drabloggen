@@ -7,7 +7,7 @@ import {TbBrandTwitter} from 'react-icons/tb'
 const NavBar = () => {
     return (
         <div className='navbar-container'>
-            <div >
+            <div className='navbar-logo'>
                 <a href='/'><img className='logga' alt='Logga' src={Logo} /></a>
             </div>
             <div className='links'>

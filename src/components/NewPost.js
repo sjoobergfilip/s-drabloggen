@@ -69,22 +69,22 @@ const NewPost = () => {
                     />
                 </div>
             ) : (
-                <div className='new-post-container'>
-                <h1 className='header-title'>Senaste nyheterna</h1>
-                <div className='container'>
-                    <div className='Latest-Post'>
-                        {latestPost &&
-                            <Card post={latestPost}/>
-                        } 
+                <div className='main-container'>
+                    <h1 className='header-title'>Senaste nyheterna</h1>
+                    <div className='container'>
+                        <div className='Latest-Post'>
+                            {latestPost &&
+                                <Card post={latestPost}/>
+                            } 
+                        </div>
+                            {filteredPost &&
+                                filteredPost.map((post, index) => (
+                                    <div className={'Post-'+index}>
+                                        <CardSmall post={post}/>
+                                    </div>
+                            ))}
                     </div>
-                        {filteredPost &&
-                            filteredPost.map((post, index) => (
-                                <div className={'Post-'+index}>
-                                    <CardSmall post={post}/>
-                                </div>
-                        ))}
                 </div>
-            </div>
             )}
         </div>
     )

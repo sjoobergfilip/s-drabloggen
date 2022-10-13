@@ -7,10 +7,15 @@
     width: 80%;
     margin: 0 auto;
     a{
-        margin-right: 2rem;
+        margin-left: 2rem;
         font-size: 1.3rem;
         &:hover{
             color: #C79433;
+        }
+    }
+    .navbar-logo{
+        a{
+            margin: 0;
         }
     }
     .icons{
