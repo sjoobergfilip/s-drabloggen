@@ -18,11 +18,11 @@ const About = () => {
             </div>
 
             <div>
-            <h1 className='header-title'>Följ oss</h1>
-            <div className='icons'>
-                <a  href="https://twitter.com/sodrabloggen" target="_blank" rel="noreferrer"><TbBrandTwitter /></a>
-                <a href="https://www.instagram.com/sodrabloggen/"  target="_blank" rel="noreferrer"><BsInstagram /></a>
-            </div>
+                <h1 className='header-title'>Följ oss</h1>
+                <div className='icons'>
+                    <a  href="https://twitter.com/sodrabloggen" target="_blank" rel="noreferrer"><TbBrandTwitter /></a>
+                    <a href="https://www.instagram.com/sodrabloggen/"  target="_blank" rel="noreferrer"><BsInstagram /></a>
+                </div>
             </div>
 
         </div>
