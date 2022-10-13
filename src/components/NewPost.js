@@ -70,7 +70,7 @@ const NewPost = () => {
                 </div>
             ) : (
                 <div className='main-container'>
-                    <h1 className='header-title'>Senaste nyheterna</h1>
+                    <h1 id='news' className='header-title'>Senaste nyheterna</h1>
                     <div className='container'>
                         <div className='Latest-Post'>
                             {latestPost &&

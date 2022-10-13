@@ -11,9 +11,9 @@ const NavBar = () => {
                 <a href='/'><img className='logga' alt='Logga' src={Logo} /></a>
             </div>
             <div className='links'>
-                <a href="/">Nyheter</a>
-                <a href="/">Illustrationer</a>
-                <a href="/">Om Oss</a>
+                <a href="#news">Nyheter</a>
+                <a href="#Illustrationer">Illustrationer</a>
+                <a href="#about">Om Oss</a>
             </div>
             <div className='icons'>
                 <a  href="https://twitter.com/sodrabloggen" target="_blank" rel="noreferrer"><TbBrandTwitter /></a>

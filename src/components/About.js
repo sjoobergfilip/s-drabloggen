@@ -7,7 +7,7 @@ const About = () => {
     <div className='main-container'>
         <div className='content-container'>
             <div>
-                <h1 className='header-title'>Om oss</h1>
+                <h1 id='about' className='header-title'>Om oss</h1>
                 <p>Vi är en idel hemsida som brinner för Jönköpings södra IF. Vi följer och rappoterar om J-Södra. 
                 Detta gör vi för att skapa mer kontent och intresse runt den klubben vi älskar. Våra värderingar 
                 är att vara så objektiv som möjligt. Vi är inga utbildade journalister utan detta sker på vår fritid. 

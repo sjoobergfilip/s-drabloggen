@@ -4,6 +4,7 @@ import Navbar from '../components/NavBar'
 import NewPost from '../components/NewPost'
 import MoreNews from '../components/MoreNews'
 import About from '../components/About'
+import Illustrations from '../components/illustrations'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <NewPost />
       <MoreNews />
       <About />
+      <Illustrations />
     </>
   )
 }

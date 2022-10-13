@@ -35,8 +35,19 @@
         margin-bottom: 2rem;
         text-transform: uppercase;
     }
-
 }
+
+.illustrations-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -100,6 +111,7 @@
     }
 }
 
+
 .more-post-container{
     display: flex;
     margin-bottom: 2rem;
@@ -135,8 +147,26 @@
     }
 }
 
+.download-btn{
+    align-self: flex-start;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
 
 @media screen and (max-width: 1073px){
+    .illustrations-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .main-container{
         margin: 2rem 1rem;
     }
@@ -162,6 +192,10 @@
     }
 }
 @media screen and (max-width: 830px){
+    .illustrations-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .container{
         grid-template-columns: 1fr;
         grid-row-gap: 2rem;
