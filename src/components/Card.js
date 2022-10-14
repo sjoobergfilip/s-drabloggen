@@ -5,7 +5,7 @@ import Logo from '../assets/img/södrabloggen.png'
 
 const Card = ({post}) => {
     return (
-        <Link to={'/nyhet/' + post.slug.current}>
+        <Link to={'/nyhet/' + post.slug.current} key={post.slug.current}>
             <div className='card-body'>
                 <div className='card-container'>
                     <div className='card-header'>

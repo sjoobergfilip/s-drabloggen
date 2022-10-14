@@ -38,6 +38,8 @@
 }
 
 .illustrations-container{
+    padding-bottom: 6rem;
+    border-bottom: 1px solid white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
@@ -78,6 +80,65 @@
             margin-right: 2rem;
             font-size: 3rem;
         }
+    }
+}
+
+
+.footer-container{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo{
+        width: 100px;
+        img{
+            width: 100%;
+        }
+    }
+    .mail{
+        margin-top: 1rem;
+    }
+}
+
+.footer-icon{
+    margin-top: 1rem;
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    a{
+        font-size: 2rem;
+    }
+}
+
+.post-body{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    h1{
+        font-size: 3rem;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.authorImage{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    img{
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+    a{
+        font-size: 1.2rem;
+        font-family: 'Inter', sans-serif;
     }
 }
 
@@ -190,10 +251,23 @@
     .content-container{
         grid-template-columns: 1fr;
     }
+    .about-us{
+        display: none;
+    }
 }
+
+
 @media screen and (max-width: 830px){
     .illustrations-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post-body{
+        padding: 2rem;
+
+        h1{
+            font-size: 2rem;
+        }
     }
 
     .container{

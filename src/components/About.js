@@ -17,7 +17,7 @@ const About = () => {
                 <p>Vi är som mest aktiva på twitter. Följ oss gärna där.</p>
             </div>
 
-            <div>
+            <div className='about-us'>
                 <h1 className='header-title'>Följ oss</h1>
                 <div className='icons'>
                     <a  href="https://twitter.com/sodrabloggen" target="_blank" rel="noreferrer"><TbBrandTwitter /></a>

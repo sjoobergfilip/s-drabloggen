@@ -5,6 +5,7 @@ import NewPost from '../components/NewPost'
 import MoreNews from '../components/MoreNews'
 import About from '../components/About'
 import Illustrations from '../components/illustrations'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <MoreNews />
       <About />
       <Illustrations />
+      <Footer />
     </>
   )
 }

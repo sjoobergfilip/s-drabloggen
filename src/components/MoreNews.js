@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import sanityClient from '../client'
 import Logo from '../assets/img/södrabloggen.png'
+import { Link } from 'react-router-dom'
 
 const MoreNews = () => {
     const [moreNews, setMoreNews] = useState(null)
@@ -54,7 +55,7 @@ const MoreNews = () => {
                         <p>I'm baby occupy flannel taxidermy banh mi, artisan tacos truffaut. Leggings tacos stumptown salvia. 
                             DIY disrupt echo park chambray franzen, typewriter microdosing flexitarian kombucha vexillologist 
                             chillwave selvage pop-up lo-fi. La croix swag tattooed jianbing, </p>
-                        <button> Läs mer </button>
+                        <Link className='download-btn' to={'/nyhet/'+ post.slug.current}> Läs mer </Link>
                     </div>
                 </div>
             )}

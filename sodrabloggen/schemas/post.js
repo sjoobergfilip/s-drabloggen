@@ -43,6 +43,11 @@ export default {
       type: 'datetime',
     },
     {
+      name: 'ingress',
+      title: 'Ingress',
+      type: 'string',
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',

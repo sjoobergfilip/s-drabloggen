@@ -43,7 +43,6 @@ const NewPost = () => {
 
     useEffect(()=>{
         if(postData){
-            console.log(postData)
             setLatestPost(postData[0])
             setFilteredPost(postData.slice(1))
         }
@@ -74,13 +73,13 @@ const NewPost = () => {
                     <div className='container'>
                         <div className='Latest-Post'>
                             {latestPost &&
-                                <Card post={latestPost}/>
+                                <Card post={latestPost} key={latestPost.slug}/>
                             } 
                         </div>
                             {filteredPost &&
                                 filteredPost.map((post, index) => (
                                     <div className={'Post-'+index}>
-                                        <CardSmall post={post}/>
+                                        <CardSmall post={post} key={post.slug}/>
                                     </div>
                             ))}
                     </div>
