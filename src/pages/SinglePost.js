@@ -6,6 +6,8 @@ import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import LazyHero from "react-lazy-hero";
+import moment from 'moment'
+import 'moment/locale/sv'
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -16,6 +18,7 @@ function urlFor(source) {
 const SinglePost = () => {
 	const [singlePost, setSinglePost] = useState(null);
 	const { slug } = useParams();
+	moment.locale('sv');  
 
 useEffect(() => {
     sanityClient
@@ -56,8 +59,8 @@ useEffect(() => {
 						<div className="authorImage">
 							<img src={urlFor(singlePost.authorImage).url()} alt={singlePost.name}/>
 							<a href={singlePost.twitterLink}>{singlePost.twitterName}</a>
-							<p>{singlePost.publishedAt}</p>
 						</div>
+						<p>{moment().format('Do MMMM YYYY',singlePost.publishedAt) }</p>
 					</div>
 					
 					<BlockContent
