@@ -13,6 +13,7 @@ const MoreNews = () => {
                 title,
                 slug,
                 publishedAt,
+                ingress,
                 mainImage{
                     asset->{
                         _id,
@@ -52,9 +53,7 @@ const MoreNews = () => {
                     </div>
                     <div className='new-content'>
                         <h1>{post.title}</h1>
-                        <p>I'm baby occupy flannel taxidermy banh mi, artisan tacos truffaut. Leggings tacos stumptown salvia. 
-                            DIY disrupt echo park chambray franzen, typewriter microdosing flexitarian kombucha vexillologist 
-                            chillwave selvage pop-up lo-fi. La croix swag tattooed jianbing, </p>
+                        <p>{post.ingress}</p>
                         <Link className='download-btn' to={'/nyhet/'+ post.slug.current}> Läs mer </Link>
                     </div>
                 </div>
