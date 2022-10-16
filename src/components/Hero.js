@@ -10,7 +10,7 @@ const Hero = () => {
                     Tiden Förenar oss
                 </h1>
                 <span>
-                    En plats för all södraiter
+                    En plats för alla södraiter
                 </span>
             </div>
             <div className='image'>
