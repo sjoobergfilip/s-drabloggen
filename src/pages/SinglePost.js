@@ -8,6 +8,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import LazyHero from "react-lazy-hero";
 import moment from 'moment'
 import 'moment/locale/sv'
+import ReactGA from 'react-ga';
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -21,6 +22,8 @@ const SinglePost = () => {
 	moment.locale('sv');  
 
 useEffect(() => {
+	ReactGA.pageview(window.location.pathname);
+
     sanityClient
     .fetch(
 		`*[slug.current == "${slug}"]{
@@ -65,7 +68,7 @@ useEffect(() => {
 					
 					<BlockContent
 						blocks={singlePost.body}
-						projectId="odgprkd0"
+						projectId={process.env.REACT_APP_SANITY_PRODUCT_KEY}
 						dataset="production"
 						/>
 				</div>
