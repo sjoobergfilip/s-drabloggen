@@ -78,8 +78,8 @@ const NewPost = () => {
                         </div>
                             {filteredPost &&
                                 filteredPost.map((post, index) => (
-                                    <div className={'Post-'+index}>
-                                        <CardSmall post={post} key={post.slug}/>
+                                    <div className={'Post-'+index} key={post.slug.current}>
+                                        <CardSmall post={post} />
                                     </div>
                             ))}
                     </div>

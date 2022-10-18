@@ -12,9 +12,7 @@ const Card = ({post}) => {
                         <h1>{post.title}</h1> 
                     </div>
                     <div className='card-footer'>
-                            <a href={post.twitterLink}>
                                 {post.twitterName}
-                            </a>
                             <img className='logga' src={Logo} alt="Logga Södrabloggen" />
                     </div>
                 </div>

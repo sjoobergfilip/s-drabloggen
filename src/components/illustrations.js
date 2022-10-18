@@ -20,19 +20,19 @@ const Illustrations = () => {
         <div className='main-container'>
             <h1 id='Illustrationer' className='header-title'>Illustrationer</h1>
             <div className='illustrations-container'>
-                <div className='card'>
+                <div className='card' key='daniel'>
                     <img src={Daniel} alt=" Daniel Ljung" />
                     <button onClick={() => setDownloadImg({img: Daniel, fileName: 'DanielLjung'})} className='download-btn'> Ladda Ner</button>
                 </div>
-                <div className='card'>
+                <div className='card' key='Jesper'>
                     <img src={Jesper} alt=" Jesper Svensson" />
                     <button onClick={() => setDownloadImg({img: Jesper, fileName: 'JesperSvensson'})} className='download-btn'> Ladda Ner</button>
                 </div>
-                <div className='card'>
-                    <img src={Daryl} alt=" Daniel Ljung" />
+                <div className='card' key='Daryl'>
+                    <img src={Daryl} alt=" Daryl Smylie" />
                     <button onClick={() => setDownloadImg({img: Daryl, fileName: 'DarylSmylie'})} className='download-btn'> Ladda Ner</button>
                 </div>
-                <div className='card'>
+                <div className='card' key='Tommy'>
                     <img src={Tommy} alt=" Tommy Thelin" />
                     <button onClick={() => setDownloadImg({img: Tommy, fileName: 'TommyThelin'})} className='download-btn'> Ladda Ner</button>
                 </div>

@@ -41,7 +41,7 @@ const MoreNews = () => {
             {moreNews && 
                 moreNews.map((post) => 
                 
-                <div className='more-post-container'>
+                <div className='more-post-container' key={post.slug.current}>
                     <div className='img-box'>
                         <div className='header'>
                             <h3>{post.title}</h3>
