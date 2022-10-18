@@ -6,12 +6,12 @@ import MoreNews from '../components/MoreNews'
 import About from '../components/About'
 import Illustrations from '../components/illustrations'
 import Footer from '../components/Footer'
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 
 const Home = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
   }, []);
 
   return (

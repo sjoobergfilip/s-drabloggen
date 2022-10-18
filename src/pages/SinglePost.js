@@ -8,7 +8,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import LazyHero from "react-lazy-hero";
 import moment from 'moment'
 import 'moment/locale/sv'
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -22,7 +22,9 @@ const SinglePost = () => {
 	moment.locale('sv');  
 
 useEffect(() => {
-	ReactGA.pageview(window.location.pathname);
+	ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+
+
 
     sanityClient
     .fetch(
