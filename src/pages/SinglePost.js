@@ -9,6 +9,7 @@ import LazyHero from "react-lazy-hero";
 import moment from 'moment'
 import 'moment/locale/sv'
 import ReactGA from "react-ga4";
+import { Share } from 'react-twitter-widgets'
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -23,9 +24,6 @@ const SinglePost = () => {
 
 useEffect(() => {
 	ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
-
-
-
     sanityClient
     .fetch(
 		`*[slug.current == "${slug}"]{
@@ -66,6 +64,8 @@ useEffect(() => {
 							<a href={singlePost.twitterLink}>{singlePost.twitterName}</a>
 						</div>
 						<p>{moment().format('Do MMMM YYYY',singlePost.publishedAt) }</p>
+						{/* <Share url={'https://dev.twitter.com/web/tweet-button'} options={{ size: "large" }} /> */}
+						<Share url={`https://sodrabloggen.se${window.location.pathname}`} options={{ size: "large" }} />
 					</div>
 					
 					<BlockContent
