@@ -60,7 +60,7 @@ const SinglePost = () => {
 				<meta property="og:title" content={singlePost.title}/>
 				<meta property="og:type" content="article" />
 				<meta property="og:image" content={singlePost.mainImage.asset.url}/>
-				<meta property="og:url" content={window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search}/>
+				<meta property="og:url" content={`https://sodrabloggen.se${window.location.pathname}`}/>
 				<meta name="twitter:card" content="summary_large_image"/>
 				<meta property="og:description" content={singlePost.ingress}/>
 				<meta name="twitter:image:alt" content="This is the image that we have on the blogbost"/>

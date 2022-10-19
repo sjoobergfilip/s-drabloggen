@@ -25,7 +25,7 @@ const Home = () => {
 				<meta property="og:title" content="Södrabloggen"/>
 				<meta property="og:type" content="article" />
 				<meta property="og:image" content={meta_IMG}/>
-				<meta property="og:url" content={window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search}/>
+				<meta property="og:url" content={`https://sodrabloggen.se${window.location.pathname}`}/>
 				<meta name="twitter:card" content="summary_large_image"/>
 				<meta property="og:description" content="Vi är en oberoende blogg som skriver och följer laget vi älskar J-Södra"/>
 				<meta name="twitter:image:alt" content="SÖdrabloggen.se logga tillsammnas med en illustration av Daniel Ljung"/>
