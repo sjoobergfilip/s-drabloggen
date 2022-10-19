@@ -61,9 +61,12 @@ const SinglePost = () => {
 				<meta property="og:type" content="article" />
 				<meta property="og:image" content={singlePost.mainImage.asset.url}/>
 				<meta property="og:url" content={`https://sodrabloggen.se${window.location.pathname}`}/>
+
+				<meta name="twitter:title" content={singlePost.title}/>
+				<meta name="twitter:description" content={singlePost.ingress} />
+				<meta name="twitter:image" content={singlePost.mainImage.asset.url} />
 				<meta name="twitter:card" content="summary_large_image"/>
-				<meta property="og:description" content={singlePost.ingress}/>
-				<meta name="twitter:image:alt" content="This is the image that we have on the blogbost"/>
+				<meta name="twitter:image:alt" content="Södrabloggen.se logga tillsammnas med en illustration av Daniel Ljung"/>	
 			</Helmet>
 			<NavbarNews />
 			<main>
