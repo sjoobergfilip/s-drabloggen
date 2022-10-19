@@ -20,7 +20,7 @@ const Home = () => {
 		<div>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>Södrabloggen</title>
+				<title>Södrabloggen - Hem</title>
 				<meta name="description" content="Vi är en oberoende blogg som skriver och följer laget vi älskar J-Södra" />
 				<meta property="og:title" content="Södrabloggen"/>
 				<meta property="og:type" content="article" />
