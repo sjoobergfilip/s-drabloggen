@@ -23,7 +23,6 @@ const SinglePost = () => {
 	const { slug } = useParams();
 	moment.locale('sv');  
 	useEffect(() => {
-		console.log(window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search)
 		ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
 		sanityClient
     .fetch(

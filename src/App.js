@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, } from "react-router-dom";
 import Home from './pages/Home';
 import SinglePost from './pages/SinglePost';
 import ReactGA from "react-ga4";
+import NotFound from "./components/NotFound";
 
 
 
@@ -15,8 +16,9 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={<Home/>}/>
+				<Route exact path='/' element={<Home/>}/>
 				<Route element={<SinglePost/>} path="/nyhet/:slug" />
+				<Route element={<NotFound/>} path="*" />
 			</Routes>
 		</BrowserRouter>
 	);

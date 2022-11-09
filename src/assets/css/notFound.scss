@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+.notFoundCOntainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 10rem;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+}
