@@ -1,16 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {Helmet} from "react-helmet";
-import NavbarNews from '../components/NavbarNews'
 import '../assets/css/notFound.scss'
 
 const NotFound = () => {
     return (
-    <>
-        <NavbarNews />
         <div className='notFoundCOntainer'>
             <Helmet>
-                    <meta charSet="utf-8" />
                     <title>Södrabloggen - 404</title>
                     <meta name="description" content="Vi är en oberoende blogg som skriver och följer laget vi älskar J-Södra" />
                     <meta property="og:title" content="Södrabloggen"/>
@@ -23,7 +19,6 @@ const NotFound = () => {
                 <Link to="/">Gå tillbaka till hem</Link>
             </div>
         </div>
-    </>
   )
 }
 
