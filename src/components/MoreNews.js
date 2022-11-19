@@ -5,11 +5,15 @@ import { Link } from 'react-router-dom'
 
 const MoreNews = () => {
     const [moreNews, setMoreNews] = useState(null)
+    const [lastPostNumber, setLastPostNumber] = useState(10)
+    const [showLoadButton, setShowLoadButton] = useState()
+    const [postLenght, setPostLenght] = useState(9)
 
     useEffect(() => {
+        setShowLoadButton(false)
         sanityClient
             .fetch(
-                `*[_type == "post"]|order(publishedAt desc)[3..10]{
+                `*[_type == "post"]|order(publishedAt desc)[3..${lastPostNumber}]{
                 title,
                 slug,
                 publishedAt,
@@ -31,7 +35,21 @@ const MoreNews = () => {
                 setMoreNews(data)
             })
             .catch(console.error);
-    }, []);
+    }, [lastPostNumber]);
+
+    useEffect(()=>{
+        if(!moreNews) return
+
+        if(moreNews.length >= postLenght){
+            setShowLoadButton(true)
+        }
+    }, [moreNews])
+
+    const loadMoreNews = () =>{
+        console.log('click on load more')
+        setLastPostNumber(showLoadButton + 10)
+        setPostLenght(postLenght + 10)
+    }
 
 
     return (
@@ -56,8 +74,14 @@ const MoreNews = () => {
                         <p>{post.ingress}</p>
                         <Link className='download-btn' to={'/nyhet/'+ post.slug.current}> Läs mer </Link>
                     </div>
+
                 </div>
             )}
+            {showLoadButton ? 
+                <div className='show-button-container'> 
+                    <button onClick={loadMoreNews} className='download-btn'>Ladda mer inlägg</button>
+                </div>  
+                : ''}
         </div>
     )
 }
