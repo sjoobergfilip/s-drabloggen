@@ -7,7 +7,7 @@ const MoreNews = () => {
     const [moreNews, setMoreNews] = useState(null)
     const [lastPostNumber, setLastPostNumber] = useState(10)
     const [showLoadButton, setShowLoadButton] = useState()
-    const [postLenght, setPostLenght] = useState(9)
+    const [postLength, setPostLength] = useState(8)
 
     useEffect(() => {
         setShowLoadButton(false)
@@ -40,15 +40,14 @@ const MoreNews = () => {
     useEffect(()=>{
         if(!moreNews) return
 
-        if(moreNews.length >= postLenght){
+        if(moreNews.length >= postLength){
             setShowLoadButton(true)
         }
-    }, [moreNews])
+    },[moreNews, postLength])
 
     const loadMoreNews = () =>{
-        console.log('click on load more')
         setLastPostNumber(showLoadButton + 10)
-        setPostLenght(postLenght + 10)
+        setPostLength(postLength + 10)
     }
 
 
