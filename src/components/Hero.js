@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/css/main.scss'
-import DanielHero from '../assets/img/daniel.png'
+import HeroImg from '../assets/img/heroImg.png'
 
 const Hero = () => {
     return (
@@ -14,7 +14,7 @@ const Hero = () => {
                 </span>
             </div>
             <div className='image'>
-                <img src={DanielHero} alt="Daniel Ljung" />
+                <img src={HeroImg} alt="Daniel Ljung" />
             </div>
         </div>
     )
