@@ -46,7 +46,7 @@ const MoreNews = () => {
     },[moreNews, postLength])
 
     const loadMoreNews = () =>{
-        setLastPostNumber(showLoadButton + 10)
+        setLastPostNumber(lastPostNumber + 10)
         setPostLength(postLength + 10)
     }
 
